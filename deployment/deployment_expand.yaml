@@ -1,0 +1,19 @@
+# 扩容
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellok8s-deployment
+spec:
+  replicas: 3 # 副本数
+  selector:
+    matchLabels:
+      app: hellok8s
+  template: # 定义pod资源
+    metadata:
+      labels:
+        app: hellok8s
+    spec:
+      containers: 
+        - image: polarbearneversleep/hellok8s:v1 
+          name: hellok8s-container
+          imagePullPolicy: IfNotPresent
