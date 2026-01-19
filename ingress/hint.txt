@@ -1,0 +1,3 @@
+startup -> ingress -> curl http://minikubeip:port/hello
+kubectl get svc -n ingress-nginx
+

@@ -53,3 +53,4 @@ data/
 dist/
 build/
 *.egg-info/
+*.tar

@@ -1,0 +1,4 @@
+FROM alpine:3.19
+
+# alpine 默认就有 /bin/sh 和 busybox
+CMD ["/bin/sh"]
