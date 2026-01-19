@@ -1,0 +1,12 @@
+application:
+  name: hellok8s
+  hellok8s:
+    image: polarbearneversleep/hellok8s:v6
+    replicas: 3
+    message: "It works with Helm Values[v2]!"
+    database:
+      url: "http://DB_ADDRESS_DEFAULT"
+      password: "polarbear_pw"
+  nginx:
+    image: nginx
+    replicas: 2

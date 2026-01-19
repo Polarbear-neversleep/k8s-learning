@@ -1,0 +1,6 @@
+helm create -> 替换yaml配置 -> 编辑Value.yaml -> 编辑template/yaml配置 -> Chart.yaml
+
+rollback只增版本
+
+打包：helm package
+安装: helm upgrade --install hello-helm *.tgz
